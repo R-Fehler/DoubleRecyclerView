@@ -14,6 +14,7 @@ object DoubleRecyclerRealm {
             .name(REALM_FILE_NAME)
             .modules(Module())
             .schemaVersion(REALM_SCHEMA_VERSION)
+            .deleteRealmIfMigrationNeeded()
             .build()
 
         Realm.setDefaultConfiguration(config)

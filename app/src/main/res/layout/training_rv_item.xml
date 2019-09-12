@@ -3,49 +3,29 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginStart="4dp"
-    android:layout_marginEnd="4dp"
     android:layout_marginTop="4dp"
+    android:layout_marginEnd="4dp"
     android:layout_marginBottom="4dp"
     android:nestedScrollingEnabled="false">
 
-    <RelativeLayout
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingStart="16dp"
-        android:paddingTop="8dp"
-        android:paddingEnd="16dp"
-        android:paddingBottom="8dp">
+        android:layout_height="wrap_content">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/trainingSetRv"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <LinearLayout
-            android:layout_below="@id/trainingSetRv"
-            android:layout_width="match_parent"
+        <TextView
+            android:layout_marginStart="4dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="1">
+            android:text="This is training no.:"/>
 
-            <EditText
-                android:inputType="text"
-                android:paddingStart="4dp"
-                android:paddingEnd="4dp"
-                android:id="@+id/editText"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.8"/>
+        <TextView
+            android:id="@+id/trainingNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:layout_marginStart="8dp"/>
 
-            <Button
-                android:id="@+id/addTrainingSetBtn"
-                android:text="Add"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.2"/>
-
-        </LinearLayout>
-
-    </RelativeLayout>
-
+    </LinearLayout>
+    
 </androidx.cardview.widget.CardView>
