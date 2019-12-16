@@ -25,10 +25,10 @@ class TrainingListPresenter {
 
     fun createTraining() {
         realm.executeTransactionAsync {
-            val training = Training()
-            it.copyToRealm(training)
+            val training = Training() // das hinzugefügte Training
+            it.copyToRealm(training) // hier wird es in die db eingefügt
 
-            view?.get()?.onTrainingCreated(training.uuid)
+            view?.get()?.onTrainingCreated(training.uuid) // das ist der angezeiegte Text
         }
     }
 }
