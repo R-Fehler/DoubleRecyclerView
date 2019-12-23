@@ -21,7 +21,7 @@ class TrainingAdapter : RecyclerView.Adapter<TrainingAdapter.ViewHolder>() {
     // Liste der Trainings: elemente der obersten RV
     private val trainingList: MutableList<Training> = mutableListOf()
 
-    //TODO was ist das
+    //TODO was ist das RecycledViewPool
     private val viewPool = RecyclerView.RecycledViewPool()
 
     private var listener: TrainingClickListener? = null

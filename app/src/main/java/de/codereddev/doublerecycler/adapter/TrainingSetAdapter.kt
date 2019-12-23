@@ -29,6 +29,8 @@ class TrainingSetAdapter(
         trainingSetList[position].let {
             holder.textView.text = it.text
         }
+//        das wäre auch gegangen
+//        holder.textView.text = trainingSetList[position].text
     }
 
     fun swapData(data: List<TrainingSet>) {
